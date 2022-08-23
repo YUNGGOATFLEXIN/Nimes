@@ -1,0 +1,25 @@
+.shop
+    padding-bottom: 130px
+
+    @media (max-width: 1024px)
+        padding-bottom: 70px
+
+    @media (max-width: 860px)
+        padding-bottom: 50px
+
+    &__list
+        display: grid
+        gap: 30px
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: auto
+
+        @media (max-width: 576px)
+            grid-template-columns: repeat(2, 1fr)
+            column-gap: 10px
+            row-gap: 30px
+
+    &__item
+        font-size: 0
+
+    &__title
+        margin-bottom: 0

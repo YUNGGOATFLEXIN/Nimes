@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overalls</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <button class="burger" aria-label="menu button">
+          <svg
+            width="30"
+            height="23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="30" height="3" fill="#333333" />
+            <rect y="10" width="30" height="3" fill="#333333" />
+            <rect y="20" width="30" height="3" fill="#333333" />
+          </svg>
+        </button>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Woman</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Man</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">New</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="index.html" class="logo">
+          <img src="./img/logo.png" alt="main logo" class="logo__img" />
+        </a>
+        <div class="header__action">
+          <a
+            href="login.html"
+            class="header__btn user-btn"
+            aria-label="user button"
+            >User</a
+          >
+          <button class="header__btn search-btn">
+            <img src="./img/search.svg" alt="search button" />
+          </button>
+          <button class="header__btn cart-btn">
+            <img src="./img/cart.svg" alt="cart button" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="overalls">
+        <div class="overalls__wrapper">
+          <div class="overalls__left">
+            <ul class="overalls__list">
+              <li class="overalls__item overalls__item_big">
+                <img src="./img/55.jpg" alt="" class="overalls__img" />
+              </li>
+              <li class="overalls__item overalls__item_little">
+                <img src="./img/56.jpg" alt="" class="overalls__img" />
+              </li>
+              <li class="overalls__item overalls__item_little">
+                <img src="./img/57.jpg" alt="" class="overalls__img" />
+              </li>
+              <li class="overalls__item overalls__item_little">
+                <img src="./img/58.jpg" alt="" class="overalls__img" />
+              </li>
+              <li class="overalls__item overalls__item_little">
+                <img src="./img/59.jpg" alt="" class="overalls__img" />
+              </li>
+            </ul>
+          </div>
+          <div class="overalls__right">
+            <h2 class="section-title overalls__title">Overalls</h2>
+            <p class="overalls__description">
+              Overalls in washed organic cotton denim. Collar, button fly, and
+              adjustable belt at waist. Chest pockets with flap. Long, gently
+              flared sleeves and straight legs with front pockets and back
+              pockets.
+            </p>
+            <form action="#" method="post">
+              <div class="overalls__radio-box overalls__radio-box_color">
+                <span class="overalls__heading overalls__heading_color"
+                  >Color</span
+                >
+                <input
+                  type="radio"
+                  id="white"
+                  name="colors"
+                  class="color-radio color-radio-white"
+                />
+                <label
+                  for="white"
+                  aria-label="check color"
+                  class="radio-custom-white"
+                >
+                </label>
+                <input
+                  type="radio"
+                  id="blue"
+                  name="colors"
+                  class="color-radio color-radio-blue"
+                  checked
+                />
+                <label
+                  for="blue"
+                  aria-label="check color"
+                  class="radio-custom-blue"
+                >
+                </label>
+                <input
+                  type="radio"
+                  id="grey"
+                  name="colors"
+                  class="color-radio color-radio-grey"
+                />
+                <label
+                  for="grey"
+                  aria-label="check color"
+                  class="radio-custom-grey"
+                >
+                </label>
+              </div>
+
+              <div class="overalls__radio-box overalls__radio-box_color">
+                <span class="overalls__heading overalls__heading_color"
+                  >Size</span
+                >
+                <input type="radio" id="xs" name="size" class="size-radio" />
+                <label for="xs" aria-label="check size" class="radio-custom-xs">
+                </label>
+                <input
+                  type="radio"
+                  id="s"
+                  name="size"
+                  class="size-radio"
+                  checked
+                />
+                <label for="s" aria-label="check size" class="radio-custom-s">
+                </label>
+                <input type="radio" id="m" name="size" class="size-radio" />
+                <label for="m" aria-label="check size" class="radio-custom-m">
+                </label>
+                <input type="radio" id="l" name="size" class="size-radio" />
+                <label for="l" aria-label="check size" class="radio-custom-l">
+                </label>
+                <input type="radio" id="xl" name="size" class="size-radio" />
+                <label for="xl" aria-label="check size" class="radio-custom-xl">
+                </label>
+              </div>
+
+              <span class="overalls__price">$160</span>
+              <button class="btn overalls__btn" type="submit">
+                Add to cart
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="also">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">You may also like</h2>
+            <a href="#" class="section-link">View all</a>
+          </div>
+          <ul class="card-list">
+            <li class="card-item also__item">
+              <div class="card-content">
+                <img
+                  src="./img/bestsellers_2.jpg"
+                  alt="Jacket"
+                  class="card-img"
+                />
+                <a href="jackets.html" class="card-title also__title"
+                  >Overalls</a
+                >
+                <span class="card-price">$140</span>
+              </div>
+            </li>
+            <li class="card-item also__item">
+              <div class="card-content">
+                <img
+                  src="./img/category_overalls.jpg"
+                  alt="Jacket"
+                  class="card-img"
+                />
+                <a href="#" class="card-title also__title">Overalls</a>
+                <span class="card-price">$110</span>
+              </div>
+            </li>
+            <li class="card-item also__item">
+              <div class="card-content">
+                <img src="./img/21.jpg" alt="Jacket" class="card-img" />
+                <a href="#" class="card-title also__title">Jacket</a>
+                <span class="card-price">$70</span>
+              </div>
+            </li>
+            <li class="card-item also__item">
+              <div class="card-content">
+                <img src="./img/41.jpg" alt="Jacket" class="card-img" />
+                <a href="#" class="card-title also__title">Jacket</a>
+                <span class="card-price">$60</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <a href="index.html" class="footer__logo logo-white" aria-label="logo">
+          <img src="./img/logo_white.png" alt="" />
+        </a>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link" aria-label="Go to shop">Shop</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link" aria-label="about delivery"
+                >Delivery</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link" aria-label="about service"
+                >Service</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link" aria-label="about sitemap"
+                >Sitemap</a
+              >
+            </li>
+            <li class="footer__item">
+              <a
+                href="contacts.html"
+                class="footer__link"
+                aria-label="go to contacts"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a
+              href="https://www.facebook.com/"
+              class="footer__social-link footer__social-link--facebook"
+              aria-label="go to facebook"
+            ></a>
+          </li>
+          <li class="footer__social-item">
+            <a
+              href="https://www.instagram.com/"
+              class="footer__social-link footer__social-link--instagram"
+              aria-label="go to instagram"
+            ></a>
+          </li>
+          <li class="footer__social-item">
+            <a
+              href="https://ru.pinterest.com/"
+              class="footer__social-link footer__social-link--pinterest"
+              aria-label="go to pinterest"
+            ></a>
+          </li>
+          <li class="footer__social-item">
+            <a
+              href="https://twitter.com/?lang=ru"
+              class="footer__social-link footer__social-link--twitter"
+              aria-label="go to twitter"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+.news
+    padding-bottom: 110px
+
+    @media (max-width: 1024px)
+        padding-bottom: 60px
+
+    @media (max-width: 860px)
+        padding-bottom: 40px
+
+    &__wrapper
+        display: flex
+
+        @media (max-width: 860px)
+            flex-direction: column
+
+    &__image
+        font-size: 0
+
+    &__img
+        display: block
+        width: 100%
+        object-fit: cover
+
+    &__article
+        max-width: 400px
+        padding: 36px 48px 30px 42px
+        background-color: $grey-color
+
+        @media (max-width: 1024px)
+            padding: 25px 40px
+
+        @media (max-width: 860px)
+            max-width: none
+            padding: 30px
+
+        @media (max-width: 320px)
+            padding: 20px
+
+    &__article-title
+        margin-bottom: 24px
+
+        @media (max-width: 320px)
+            margin-bottom: 18px
+
+    &__article-data
+        margin-bottom: 14px
+
+    &__article-text
+        margin-bottom: 24px
+
+    &__btn
+        padding: 27px 45px
+
+    &__bg
+        padding: 33px 70px 33px 0
+        background-image: url(../img/line_up.svg)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+
+        @media (max-width: 1024px)
+            padding: 25px 45px 25px 0
+
+        @media (max-width: 860px)
+            padding: 0
+            background-image: none

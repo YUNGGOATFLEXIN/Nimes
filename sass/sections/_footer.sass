@@ -1,0 +1,100 @@
+.footer
+    padding: 50px
+    background-color: $black-color
+
+    @media (max-width: 576px)
+        padding: 40px 20px
+
+    &__logo
+        margin-bottom: 35px
+
+    &__wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+
+        @media (max-width: 576px)
+            flex-direction: row
+            justify-content: space-between
+
+    &__nav
+        margin-bottom: 37px
+
+        @media (max-width: 576px)
+            margin-bottom: 0
+
+    &__list
+        display: flex
+
+        @media (max-width: 576px)
+            margin-left: 20px
+            flex-direction: column
+            align-items: flex-start
+
+    &__item
+        transition: transform .3s linear
+
+        @media (max-width: 576px)
+            margin-bottom: 20px
+
+    &__item:hover &__link
+        transform: scale(1.2, 1.2)
+
+    &__item:not(:last-child)
+        margin-right: 35px
+
+    &__link
+        font-weight: 500
+        font-size: 18px
+        line-height: 21px
+        color: $white-color
+
+    &__social-list
+        display: flex
+
+        @media (max-width: 576px)
+            flex-direction: column
+            align-items: flex-start
+
+    &__social-item
+        @media (max-width: 576px)
+            margin-bottom: 20px
+
+    &__social-item:hover &__social-link
+        transform: scale(1.2, 1.2)
+
+    &__social-item:not(:last-child)
+        margin-right: 30px
+
+    &__social-item:first-child
+        margin-right: 34px
+
+    &__social-link
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+
+    &__social-link--facebook
+        width: 11px
+        height: 20px
+        background-image: url('../img/fb.svg')
+
+        @media (max-width: 576px)
+            transform: translateX(4px)
+
+    &__social-link--instagram
+        width: 20px
+        height: 20px
+        background-image: url('../img/inst.svg')
+
+    &__social-link--pinterest
+        width: 21px
+        height: 21px
+        background-image: url('../img/pint.svg')
+
+    &__social-link--twitter
+        width: 20px
+        height: 17px
+        background-image: url('../img/twitter.svg')
+        transform: translateY(2px)
